@@ -1,0 +1,199 @@
+import React from "react";
+
+// Jomwaka - Single-file React component
+// Tailwind CSS utility classes are used for styling (assumes Tailwind is set up in the project)
+
+export default function JomwakaWebsite() {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-900 antialiased">
+      <header className="bg-white shadow">
+        <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-500 flex items-center justify-center text-white font-bold">J</div>
+            <div>
+              <h1 className="text-xl font-semibold">Jomwaka ICT</h1>
+              <p className="text-sm text-gray-500">Modern technology solutions — Founded by Joseph Kasunga</p>
+            </div>
+          </div>
+          <nav className="hidden md:flex items-center gap-6 text-sm">
+            <a href="#about" className="hover:text-indigo-600">About</a>
+            <a href="#services" className="hover:text-indigo-600">Services</a>
+            <a href="#works" className="hover:text-indigo-600">Works</a>
+            <a href="#contact" className="hover:text-indigo-600">Contact</a>
+          </nav>
+          <div className="hidden md:block">
+            <a href="#contact" className="inline-block px-4 py-2 rounded-lg bg-indigo-600 text-white text-sm">Get in touch</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        {/* Hero */}
+        <section className="bg-gradient-to-r from-white to-indigo-50">
+          <div className="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-extrabold leading-tight">Jomwaka ICT — Modern, Reliable, Local</h2>
+              <p className="mt-4 text-gray-700 text-lg">We build websites, provide IT support, and create tailored solutions for small businesses and professionals. Founded by <strong>Joseph Kasunga</strong>.</p>
+
+              <div className="mt-6 flex gap-4">
+                <a href="#contact" className="px-5 py-3 rounded-lg bg-indigo-600 text-white font-medium">Request a quote</a>
+                <a href="#services" className="px-5 py-3 rounded-lg border border-gray-200">Our services</a>
+              </div>
+
+              <div className="mt-6 text-sm text-gray-600">
+                <div>Phone: <a href="tel:+265992130037" className="text-indigo-600">0992130037</a></div>
+                <div>Email: <a href="mailto:kasungajoseph218@gmail.com" className="text-indigo-600">kasungajoseph218@gmail.com</a></div>
+                <div>Facebook: <a href="https://facebook.com/Jomwaka.Mbila.Kasunga" target="_blank" rel="noreferrer" className="text-indigo-600">Jomwaka Mbila Kasunga</a></div>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center">
+              <div className="w-full max-w-md p-6 rounded-2xl shadow-lg bg-white">
+                <h3 className="text-lg font-semibold">Ready to start?</h3>
+                <p className="text-sm text-gray-600 mt-2">Tell us about your project and we'll get back to you.</p>
+                <form className="mt-4 grid gap-3">
+                  <input className="border border-gray-200 rounded-md px-3 py-2 text-sm" placeholder="Your name" />
+                  <input className="border border-gray-200 rounded-md px-3 py-2 text-sm" placeholder="Email or phone" />
+                  <textarea className="border border-gray-200 rounded-md px-3 py-2 text-sm" rows={4} placeholder="Brief project description" />
+                  <button type="button" className="mt-1 px-4 py-2 rounded-md bg-indigo-600 text-white font-medium">Send message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About */}
+        <section id="about" className="max-w-6xl mx-auto px-6 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div>
+              <h3 className="text-3xl font-bold">About Jomwaka ICT</h3>
+              <p className="mt-4 text-gray-700">Jomwaka ICT is a modern technology brand founded to help individuals and small businesses harness digital tools. We specialize in web development, IT support, digital design, and training. Our approach is simple: understand your needs, build fast and maintainable solutions, and support you after launch.</p>
+
+              <ul className="mt-4 space-y-2 text-gray-700">
+                <li>• Web & mobile-friendly websites</li>
+                <li>• IT support & troubleshooting</li>
+                <li>• Branding & graphic design</li>
+                <li>• Training and mentorship</li>
+              </ul>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h4 className="font-semibold">Founder</h4>
+              <p className="mt-2 text-gray-700">Joseph Kasunga — technology enthusiast and founder of Jomwaka ICT. Driven to help local businesses modernize and scale using practical, affordable technology.</p>
+
+              <div className="mt-4">
+                <a href="#contact" className="inline-block px-4 py-2 rounded-md bg-indigo-600 text-white">Work with Joseph</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services */}
+        <section id="services" className="bg-white border-t border-b border-gray-100">
+          <div className="max-w-6xl mx-auto px-6 py-16">
+            <h3 className="text-3xl font-bold">Services</h3>
+            <p className="mt-2 text-gray-600">Tailored services to fit your needs.</p>
+
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="p-6 bg-indigo-50 rounded-lg">
+                <h4 className="font-semibold">Website Development</h4>
+                <p className="mt-2 text-sm text-gray-700">Fast, responsive sites built with modern tools. E-commerce, portfolios, business sites.</p>
+              </div>
+
+              <div className="p-6 bg-indigo-50 rounded-lg">
+                <h4 className="font-semibold">IT Support</h4>
+                <p className="mt-2 text-sm text-gray-700">Troubleshooting, setup, and maintenance for PCs and small networks.</p>
+              </div>
+
+              <div className="p-6 bg-indigo-50 rounded-lg">
+                <h4 className="font-semibold">Branding & Design</h4>
+                <p className="mt-2 text-sm text-gray-700">Logos, social media graphics, and visual identity for businesses and events.</p>
+              </div>
+
+              <div className="p-6 bg-indigo-50 rounded-lg">
+                <h4 className="font-semibold">Training & Mentorship</h4>
+                <p className="mt-2 text-sm text-gray-700">Hands-on workshops for students and small teams.</p>
+              </div>
+
+              <div className="p-6 bg-indigo-50 rounded-lg">
+                <h4 className="font-semibold">Maintenance & Hosting</h4>
+                <p className="mt-2 text-sm text-gray-700">Reliable hosting recommendations and ongoing website maintenance.</p>
+              </div>
+
+              <div className="p-6 bg-indigo-50 rounded-lg">
+                <h4 className="font-semibold">Custom Solutions</h4>
+                <p className="mt-2 text-sm text-gray-700">From small automations to database setup — we build what you need.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Works / Portfolio */}
+        <section id="works" className="max-w-6xl mx-auto px-6 py-16">
+          <h3 className="text-3xl font-bold">Recent Work</h3>
+          <p className="mt-2 text-gray-600">A few examples of websites and projects we've delivered.</p>
+
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Placeholder cards - replace images and links with real portfolio items */}
+            {Array.from({ length: 3 }).map((_, i) => (
+              <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="h-44 bg-gray-100 flex items-center justify-center text-gray-400">Project screenshot</div>
+                <div className="p-4">
+                  <h4 className="font-semibold">Project {i + 1}</h4>
+                  <p className="mt-2 text-sm text-gray-600">Short description of the project and its impact.</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="bg-indigo-600 text-white py-16">
+          <div className="max-w-4xl mx-auto px-6">
+            <h3 className="text-2xl font-bold">Get in touch</h3>
+            <p className="mt-2 text-indigo-100">Ready to discuss your project or need support? Reach out using any of the contact options below.</p>
+
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div>
+                  <h4 className="font-semibold">Phone</h4>
+                  <p className="text-indigo-100">0992130037</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Email</h4>
+                  <p className="text-indigo-100">kasungajoseph218@gmail.com</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold">Facebook</h4>
+                  <p className="text-indigo-100">Jomwaka Mbila Kasunga</p>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg p-4 text-gray-800">
+                <form className="grid gap-3">
+                  <input className="border border-gray-200 rounded-md px-3 py-2" placeholder="Your name" />
+                  <input className="border border-gray-200 rounded-md px-3 py-2" placeholder="Email or phone" />
+                  <textarea className="border border-gray-200 rounded-md px-3 py-2" rows={4} placeholder="Message" />
+                  <button type="button" className="mt-1 px-4 py-2 rounded-md bg-indigo-600 text-white">Send message</button>
+                </form>
+                <p className="mt-2 text-sm text-gray-600">(This demo form does not send messages — wire up an API or email service in your project.)</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="bg-white border-t border-gray-100">
+        <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="text-sm text-gray-600">© {new Date().getFullYear()} Jomwaka ICT — Built by Joseph Kasunga</div>
+          <div className="flex items-center gap-4 text-sm">
+            <a href="#" className="hover:text-indigo-600">Privacy</a>
+            <a href="#" className="hover:text-indigo-600">Terms</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+
