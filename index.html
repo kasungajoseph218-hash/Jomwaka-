@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jomwaka ICT — Modern Technology</title>
+  <meta name="description" content="Jomwaka ICT — Web development, IT support, branding and training. Founded by Joseph Kasunga." />
+  <style>
+    :root{
+      --bg:#f7f8fc; --card:#ffffff; --muted:#6b7280; --accent:#4f46e5; --accent-2:#7c3aed;
+      --radius:14px; --maxw:1100px; --glass: rgba(255,255,255,0.6);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;background:linear-gradient(90deg,#fff 0%, #f8fafc 100%);border-radius:12px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    nav{display:flex;gap:14px}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;padding:48px 0}
+    @media(min-width:900px){.hero{grid-template-columns:1fr 420px}}
+    h1{font-size:32px;margin:0 0 12px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 30px rgba(12,18,31,0.06);padding:18px}
+    form input, form textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #e6e9f0;margin-top:8px}
+    form button{margin-top:10px;padding:10px;border-radius:10px;border:0;background:var(--accent);color:white;font-weight:700}
+
+    .grid-3{display:grid;grid-template-columns:1fr;gap:14px;margin-top:20px}
+    @media(min-width:900px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .service{padding:18px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfbff);border:1px solid #eef2ff}
+
+    .portfolio{display:grid;grid-template-columns:1fr;gap:12px;margin-top:18px}
+    @media(min-width:700px){.portfolio{grid-template-columns:repeat(3,1fr)}}
+    .project{height:160px;background:#f3f4f6;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+
+    footer{margin-top:36px;padding:18px 0;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+    /* Utilities */
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">J</div>
+        <div>
+          <div style="font-weight:800">Jomwaka ICT</div>
+          <div class="small muted">Founded by Joseph Kasunga</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#works">Works</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Jomwaka ICT — Modern, reliable, local</h1>
+          <p class="lead">We build websites, provide IT support, and create designs that help small businesses and professionals stand out online. Fast, affordable, and easy to manage.</p>
+
+          <div class="card">
+            <h3 style="margin:0 0 8px">Contact</h3>
+            <p class="muted small" style="margin:0 0 12px">Phone: <strong>0992130037</strong> · Email: <strong>kasungajoseph218@gmail.com</strong></p>
+
+            <div class="small muted">Social: <a href="https://facebook.com/Jomwaka.Mbila.Kasunga" target="_blank">Jomwaka Mbila Kasunga</a></div>
+          </div>
+
+          <section id="about" style="margin-top:18px">
+            <div class="card">
+              <h3 style="margin:0 0 8px">About Jomwaka</h3>
+              <p class="muted small" style="margin:0">Jomwaka ICT helps individuals and small businesses harness digital tools — web development, IT support, branding, and training. We focus on practical solutions that you can afford and maintain.</p>
+            </div>
+          </section>
+
+          <section id="services" style="margin-top:18px">
+            <h3 style="margin:12px 0">Services</h3>
+            <div class="grid-3">
+              <div class="service">
+                <strong>Website Development</strong>
+                <p class="muted small">Responsive websites, e-commerce, portfolios.</p>
+              </div>
+
+              <div class="service">
+                <strong>IT Support</strong>
+                <p class="muted small">PC setup, troubleshooting and small network support.</p>
+              </div>
+
+              <div class="service">
+                <strong>Branding & Design</strong>
+                <p class="muted small">Logos, graphics for social media and print.</p>
+              </div>
+
+              <div class="service">
+                <strong>Training & Mentorship</strong>
+                <p class="muted small">Workshops for students and teams.</p>
+              </div>
+
+              <div class="service">
+                <strong>Maintenance & Hosting</strong>
+                <p class="muted small">Hosting guidance and ongoing maintenance.</p>
+              </div>
+
+              <div class="service">
+                <strong>Custom Solutions</strong>
+                <p class="muted small">Small automations, databases and tools.</p>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 style="margin:0 0 8px">Start your project</h3>
+            <p class="muted small" style="margin:0 0 12px">Tell us a little about your idea and how we can help.</p>
+            <form id="contact-form">
+              <label class="small muted">Your name</label>
+              <input type="text" name="name" placeholder="John Doe" required />
+
+              <label class="small muted">Email or phone</label>
+              <input type="text" name="contact" placeholder="you@mail.com or 099..." required />
+
+              <label class="small muted">Project (short)</label>
+              <textarea name="message" rows="4" placeholder="Describe your project" required></textarea>
+
+              <button type="submit">Send message</button>
+            </form>
+            <p class="small muted" style="margin-top:8px">This demo form does not send messages. To make it work, connect it to an email service or backend.</p>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h4 style="margin:0 0 6px">Quick info</h4>
+            <div class="small muted">Location: Malawi</div>
+            <div class="small muted">Founder: Joseph Kasunga</div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="works" style="margin-top:22px">
+        <h3 style="margin:8px 0">Recent work</h3>
+        <div class="portfolio">
+          <div class="project">Project 1 — Screenshot</div>
+          <div class="project">Project 2 — Screenshot</div>
+          <div class="project">Project 3 — Screenshot</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Jomwaka ICT — Built by Joseph Kasunga</div>
+      <div class="small muted">Phone: 0992130037 · Email: kasungajoseph218@gmail.com</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple demo: show an alert instead of sending form
+    document.getElementById('contact-form').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = this.name.value || 'Friend';
+      alert('Thanks ' + name + '! Your message was captured in this demo. To actually send it, I can wire it to email or WhatsApp.');
+    });
+  </script>
+</body>
+</html>
+
